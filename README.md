@@ -105,6 +105,8 @@ This project provides a real-time synchronization solution between Google Sheets
 - **Bidirectional Synchronization**: Prevents feedback loops where changes from Google Sheets to SQL could trigger redundant updates from SQL back to Google Sheets.
   
 - **Scalability**: Designed to handle large datasets with numerous tables and rows while maintaining near real-time synchronization.
+  
+- **Any type of spreadsheet can be used** : The SQL table is created in accordance to the spreadsheet and not with any specific required columns.
 
 ### Deployment Notes
 
