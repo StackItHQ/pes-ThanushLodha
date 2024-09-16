@@ -119,3 +119,12 @@ This project provides a real-time synchronization solution between Google Sheets
 
 This solution provides a reliable and scalable method to synchronize Google Sheets and SQL databases in real time. By handling edge cases such as column name changes and preventing unnecessary triggers, it ensures efficient synchronization across platforms.
 
+## Thought process behind the solution
+
+I began by focusing on transferring data from Google Sheets to SQL, which led to the creation of sheets_to_mysql.py. This script performs a one-time synchronization of data from Sheets to SQL. To achieve real-time synchronization, I explored various methods, including using a log table and Google Apps Script. Although the log table seemed like a viable option initially, it wasn’t scalable. This led me to use Apps Script to connect to the SQL database via JDBC, which brought me closer to real-time synchronization.
+
+Next, I tackled the problem of synchronizing SQL data back to Google Sheets. Since the SQL database is already set up for the spreadsheet, the next step was to create triggers to update the Google Sheets. However, I encountered two main issues:
+
+Python functions cannot be executed via triggers.
+Triggers run on any change, including those made directly in Google Sheets, leading to unnecessary executions.
+To address these issues, I decided to use a combination of a log table and a global variable table. The global variable is used to control the execution of triggers. When an update occurs from Google Sheets, the global variable is set to 0, indicating that synchronization is in progress. Once the update is complete, the variable is set back to 1. This approach helps manage the synchronization process more effectively.
