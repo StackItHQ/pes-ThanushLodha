@@ -1,0 +1,4 @@
+To open the Apps Script editor in Google Sheets, you can:
+Open a spreadsheet
+Click Extensions
+Select Apps Script 
