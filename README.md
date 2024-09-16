@@ -62,7 +62,8 @@ All the best ✨.
 ## Developer's Section
 
 # Google Sheets and SQL Real-Time Synchronization
-[Video]([(https://drive.google.com/drive/folders/1lmAEWa8p8Pih5NLcMsTF5x5qn0W05UXP?usp=sharing)])
+[Video](https://drive.google.com/drive/folders/1lmAEWa8p8Pih5NLcMsTF5x5qn0W05UXP?usp=sharing)
+
 
 ## Overview
 
