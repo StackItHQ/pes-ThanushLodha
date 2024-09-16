@@ -94,6 +94,8 @@ This project provides a real-time synchronization solution between Google Sheets
      - Monitors the log table in SQL for changes.
      - Ensures real-time synchronization from SQL to Google Sheets when changes are detected.
      - Deletes the log entries once synchronization is complete.
+4. **trial.ipynb**(Not used in the final product)
+    - **Purpsoe**: This file is utilized to explore and understand the concepts to be implemented. It serves as a testing and debugging tool for outputs before final implementation.
 
 ### Key Features and Edge Cases
 
